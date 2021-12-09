@@ -11,7 +11,7 @@
     "build:prod": "NODE_ENV=production webpack --progress --colors",
     "watch": "webpack-dev-server --progress --colors",
     "start": "npm run watch",
-    "test": "jest",
+    "test": "jest --env=jsdom",
     "test:coverage": "jest --coverage"
   },
   "author": "",
@@ -43,14 +43,16 @@
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
     "husky": "^4.2.5",
-    "jest": "^26.1.0",
     "lint-staged": "^10.2.11",
     "mini-css-extract-plugin": "^0.9.0",
     "node-fetch-polyfill": "^2.0.6",
     "prettier": "^2.0.5",
     "raw-loader": "^4.0.1",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.3"
   }
 }
