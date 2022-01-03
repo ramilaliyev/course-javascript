@@ -20,7 +20,7 @@ import './dnd.html';
 const homeworkContainer = document.querySelector('#app');
 
 function random(from, to) {
-  return parseInt(from + Math.random * to - from);
+  return parseInt(from + Math.random() * to - from);
 }
 
 let currentDrag;
@@ -41,7 +41,7 @@ export function createDiv() {
   const maxColor = 0xffffff;
 
   div.className = 'draggable-div';
-  div.style.backgroundColor = '#' + random(0, maxColor).toString(16);
+  div.style.background = '#' + random(0, maxColor).toString(16);
   div.style.top = random(0, window.innerHeight) + 'px';
   div.style.left = random(0, window.innerWidth) + 'px';
   div.style.height = random(minSize, maxSize) + 'px';
